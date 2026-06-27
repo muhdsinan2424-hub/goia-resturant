@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOIA | Cinematic Luxury Dining Experience</title>
+  <meta name="description" content="Embark on a cinematic sensory journey at GOIA, where gastronomy meets premium architectural luxury. Experience our Michelin-standard dining.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <script type="module" crossorigin src="./assets/index-BjpxDF-x.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-JXVMs2yD.css">
+</head>
+<body>
+
+  <!-- Global Noise & Overlay Effects -->
+  <div class="noise-overlay"></div>
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-glow"></div>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">GOIA</div>
+      <div class="preloader-line-container">
+        <div class="preloader-line"></div>
+      </div>
+      <div class="preloader-status">
+        <span class="loading-text">Preparing the Culinary Journey</span>
+        <span class="loading-percentage">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="navbar-header">
+    <div class="navbar-container">
+      <a href="#" class="logo">GOIA</a>
+      <nav class="nav-menu">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#reserve" class="btn-reserve">Reserve Table</a>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Scroll Section -->
+  <section class="hero-scroll-section">
+    <div class="hero-canvas-container">
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-vignette"></div>
+      
+      <!-- Overlay text steps for scroll synchronization -->
+      <div class="hero-overlays">
+        <div class="overlay-text step-1 active">
+          <span class="step-badge">GOIA Restaurant</span>
+          <h1 class="glow-text">Experience Luxury Dining</h1>
+          <p class="sub-heading">Every meal tells a story.</p>
+          <div class="cta-buttons">
+            <a href="#reserve" class="btn btn-gold">Reserve Table</a>
+            <a href="#menu" class="btn btn-outline">View Menu</a>
+          </div>
+        </div>
+        
+        <div class="overlay-text step-2">
+          <span class="step-badge">The Threshold</span>
+          <h2>Step Into Our World</h2>
+          <p>A cinematic camera journey through refinement, craft, and architectural splendor.</p>
+        </div>
+        
+        <div class="overlay-text step-3">
+          <span class="step-badge">The Sanctuary</span>
+          <h2>A Symphony of Senses</h2>
+          <p>Immerse yourself in our elegant dining room, where comfort meets visual masterpiece.</p>
+        </div>
+        
+        <div class="overlay-text step-4">
+          <span class="step-badge">The Masterpiece</span>
+          <h2>Taste the Extraordinary</h2>
+          <p>Where raw ingredients undergo culinary alchemy to create pure Michelin-star magic.</p>
+          <div class="cta-buttons">
+            <a href="#menu" class="btn btn-gold">Discover the Menu</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <span class="scroll-indicator-text">Scroll to Begin</span>
+        <div class="scroll-indicator-mouse">
+          <div class="scroll-indicator-wheel"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Container (Scrolls over the hero canvas background once it unpins) -->
+  <main class="main-content">
+    
+    <!-- Background Ambient Orbs -->
+    <div class="ambient-glow-orb orb-1"></div>
+    <div class="ambient-glow-orb orb-2"></div>
+    <div class="ambient-glow-orb orb-3"></div>
+    
+    <!-- Section: Signature Dishes Showcase (Full-screen Pinned Slides) -->
+    <section id="menu" class="section-signature-showcase">
+      <div class="showcase-pin-container">
+        <!-- Slide 1 -->
+        <div class="showcase-slide active" data-slide="0">
+          <div class="showcase-bg-spotlight" style="background: radial-gradient(circle at 75% 50%, rgba(46, 139, 87, 0.22) 0%, rgba(15, 17, 21, 0) 70%);"></div>
+          <div class="showcase-grid">
+            <div class="showcase-image-col">
+              <div class="showcase-image-wrapper">
+                <img src="./images/dish-wagyu.jpg" alt="Truffle Glazed Wagyu Beef" class="showcase-img">
+                <canvas class="steam-canvas"></canvas>
+                <div class="showcase-vignette"></div>
+              </div>
+            </div>
+            <div class="showcase-content-col">
+              <span class="showcase-badge">Gastronomic Masterpieces / 01</span>
+              <h2 class="showcase-title">Truffle Glazed Wagyu</h2>
+              <span class="showcase-tag">A5 Wagyu / $145</span>
+              <p class="showcase-description">Pan-seared A5 Wagyu beef steak with truffle glaze, microgreens, and gold leaf flake plating.</p>
+              <div class="showcase-action">
+                <a href="#reserve" class="btn btn-gold">Experience Taste</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="showcase-slide" data-slide="1">
+          <div class="showcase-bg-spotlight" style="background: radial-gradient(circle at 75% 50%, rgba(212, 175, 55, 0.16) 0%, rgba(15, 17, 21, 0) 70%);"></div>
+          <div class="showcase-grid">
+            <div class="showcase-image-col">
+              <div class="showcase-image-wrapper">
+                <img src="./images/dish-seabass.jpg" alt="Pan-Seared Glacier Sea Bass" class="showcase-img">
+                <canvas class="steam-canvas"></canvas>
+                <div class="showcase-vignette"></div>
+              </div>
+            </div>
+            <div class="showcase-content-col">
+              <span class="showcase-badge">Gastronomic Masterpieces / 02</span>
+              <h2 class="showcase-title">Glacier Sea Bass</h2>
+              <span class="showcase-tag">Seafood / $85</span>
+              <p class="showcase-description">Exquisite sea bass fillet served with delicate saffron foam, Ossetra caviar, and edible flowers.</p>
+              <div class="showcase-action">
+                <a href="#reserve" class="btn btn-gold">Experience Taste</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="showcase-slide" data-slide="2">
+          <div class="showcase-bg-spotlight" style="background: radial-gradient(circle at 75% 50%, rgba(184, 115, 51, 0.22) 0%, rgba(15, 17, 21, 0) 70%);"></div>
+          <div class="showcase-grid">
+            <div class="showcase-image-col">
+              <div class="showcase-image-wrapper">
+                <img src="./images/dish-risotto.jpg" alt="Gold Leaf Saffron Risotto" class="showcase-img">
+                <canvas class="steam-canvas"></canvas>
+                <div class="showcase-vignette"></div>
+              </div>
+            </div>
+            <div class="showcase-content-col">
+              <span class="showcase-badge">Gastronomic Masterpieces / 03</span>
+              <h2 class="showcase-title">Gold Saffron Risotto</h2>
+              <span class="showcase-tag">Vegetarian / $65</span>
+              <p class="showcase-description">Rich Arborio rice simmered in saffron broth, topped with edible 24k gold leaf and crispy Parmesan.</p>
+              <div class="showcase-action">
+                <a href="#reserve" class="btn btn-gold">Experience Taste</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Dining Experience -->
+    <section id="about" class="section-experience">
+      <!-- Vertical floating light beams -->
+      <div class="light-beams-container">
+        <div class="light-beam beam-1"></div>
+        <div class="light-beam beam-2"></div>
+        <div class="light-beam beam-3"></div>
+      </div>
+      <div class="section-container">
+        <div class="experience-grid">
+          <div class="experience-content">
+            <span class="section-subtitle">The Art of Hospitality</span>
+            <h2 class="section-title">A Dining Ritual</h2>
+            <div class="section-line"></div>
+            <p class="experience-p highlight-p">At GOIA, dining is not simply a meal—it is a staged theatrical performance designed to awaken all five senses.</p>
+            <p class="experience-p">From the architectural symmetry of our dining hall to the custom acoustic soundscapes and hand-crafted table settings, every single detail has been selected to create an atmosphere of refined indulgence.</p>
+            
+            <div class="experience-timeline">
+              <div class="timeline-step">
+                <span class="timeline-num">I</span>
+                <p>The Welcome — Crossing the threshold into Mayfair's sanctuary of architectural elegance.</p>
+              </div>
+              <div class="timeline-step">
+                <span class="timeline-num">II</span>
+                <p>The Synthesis — A custom-tailored acoustic profile accompanied by wine cellar selections.</p>
+              </div>
+              <div class="timeline-step">
+                <span class="timeline-num">III</span>
+                <p>The Masterpiece — Tasting Michelin-standard gastronomy plated with artistic precision.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="experience-gallery-grid">
+            <div class="exp-photo exp-photo-1">
+              <img src="./images/exp-dining.jpg" alt="Luxury Dining Room" class="exp-img">
+            </div>
+            <div class="exp-photo exp-photo-2">
+              <img src="./images/exp-wine.jpg" alt="Wine Collection cellar" class="exp-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Chef's Specials (Horizontal Scroll Section) -->
+    <section class="section-specials">
+      <div class="specials-title-container">
+        <div class="section-header">
+          <span class="section-subtitle">Limited Curations</span>
+          <h2 class="section-title">Chef's Rare Creations</h2>
+          <div class="section-line"></div>
+        </div>
+      </div>
+      
+      <div class="specials-scroll-wrapper">
+        <div class="specials-track">
+          <!-- Special 1 -->
+          <div class="special-card glass-card">
+            <div class="special-number">01</div>
+            <div class="special-image">
+              <img src="./images/special-1.jpg" alt="Caviar Tartlet">
+            </div>
+            <div class="special-details">
+              <h3>Beluga Caviar Tartlet</h3>
+              <p>Crispy shell layered with whipped creme fraiche, cured egg yolk, and topped with premium Beluga caviar.</p>
+              <span class="special-price">$90</span>
+            </div>
+          </div>
+          
+          <!-- Special 2 -->
+          <div class="special-card glass-card">
+            <div class="special-number">02</div>
+            <div class="special-image">
+              <img src="./images/special-2.jpg" alt="Smoked Octopus">
+            </div>
+            <div class="special-details">
+              <h3>Hickory Smoked Octopus</h3>
+              <p>Tender octopus tentacle grilled over binchotan charcoal, glazed with yuzu kosho, smoked table-side.</p>
+              <span class="special-price">$75</span>
+            </div>
+          </div>
+
+          <!-- Special 3 -->
+          <div class="special-card glass-card">
+            <div class="special-number">03</div>
+            <div class="special-image">
+              <img src="./images/special-3.jpg" alt="Truffle Souffle">
+            </div>
+            <div class="special-details">
+              <h3>White Truffle Soufflé</h3>
+              <p>Decadent twice-baked soufflé infused with premium white truffles from Alba, served with warm cream sauce.</p>
+              <span class="special-price">$80</span>
+            </div>
+          </div>
+
+          <!-- Special 4 -->
+          <div class="special-card glass-card">
+            <div class="special-number">04</div>
+            <div class="special-image">
+              <img src="./images/special-4.jpg" alt="Gold Dessert">
+            </div>
+            <div class="special-details">
+              <h3>Chocolate & Gold Sphere</h3>
+              <p>Dark chocolate sphere filled with hazelnut mousse, shattered with hot caramel sauce table-side.</p>
+              <span class="special-price">$55</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Restaurant Gallery (Masonry Grid with Lightbox) -->
+    <section id="gallery" class="section-gallery">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Visual Splendor</span>
+          <h2 class="section-title">Our Visual Gallery</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <div class="gallery-stagger-layout">
+          <div class="gallery-item item-left" data-index="0">
+            <div class="gallery-img-container">
+              <img src="./images/gallery-1.jpg" alt="Gourmet dish culinary close up" class="gallery-img">
+            </div>
+            <div class="gallery-caption">Culinary Plating Artistry</div>
+          </div>
+          <div class="gallery-item item-right item-offset" data-index="1">
+            <div class="gallery-img-container">
+              <img src="./images/gallery-2.jpg" alt="Luxury restaurant dining atmosphere" class="gallery-img">
+            </div>
+            <div class="gallery-caption">The Main Sanctuary</div>
+          </div>
+          <div class="gallery-item item-center" data-index="2">
+            <div class="gallery-img-container">
+              <img src="./images/gallery-3.jpg" alt="Chef plating a Michelin star dessert" class="gallery-img">
+            </div>
+            <div class="gallery-caption">Handcrafting Sweet Masterpieces</div>
+          </div>
+          <div class="gallery-item item-left" data-index="3">
+            <div class="gallery-img-container">
+              <img src="./images/gallery-4.jpg" alt="Elegant cocktail presentation with smoke" class="gallery-img">
+            </div>
+            <div class="gallery-caption">Smoked Botanical Elixirs</div>
+          </div>
+          <div class="gallery-item item-right item-offset" data-index="4">
+            <div class="gallery-img-container">
+              <img src="./images/gallery-5.jpg" alt="Premium private dining lounge setting" class="gallery-img">
+            </div>
+            <div class="gallery-caption">The Private Salon</div>
+          </div>
+          <div class="gallery-item item-center" data-index="5">
+            <div class="gallery-img-container">
+              <img src="./images/gallery-6.jpg" alt="Artfully roasted duck breast dish" class="gallery-img">
+            </div>
+            <div class="gallery-caption">Roasted Duck Breast Glaze</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Testimonials (Auto sliding Carousel) -->
+    <section class="section-testimonials">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">The Verdict</span>
+          <h2 class="section-title">Patron Reviews</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <div class="testimonials-slider-container">
+          <div class="testimonials-slider">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide glass-card active">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">"The camera scrolling journey is just a preview of the physical grandeur. Walking through those actual doors, the service was choreography, and the food was absolute culinary art. The Wagyu left me speechless."</p>
+              <div class="review-author">
+                <span class="author-name">Eleanor Vance</span>
+                <span class="author-title">Le Monde Critic</span>
+              </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide glass-card">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">"GOIA is the future of luxury fine dining. A multisensory experience that perfectly fuses high technology, gorgeous design, and flavors that push the boundaries of culinary science."</p>
+              <div class="review-author">
+                <span class="author-name">Marcus Aurelius</span>
+                <span class="author-title">Gastronomy Enthusiast</span>
+              </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide glass-card">
+              <div class="stars">★★★★★</div>
+              <p class="review-text">"The white truffle soufflé is worth the cross-continental flight alone. The atmosphere makes you feel like you are inside a private sanctuary of pure culinary indulgence."</p>
+              <div class="review-author">
+                <span class="author-name">Dr. Sophia Martinez</span>
+                <span class="author-title">Vogue Lifestyle Editor</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Reservation Form (CTA) -->
+    <section id="reserve" class="section-reservation">
+      <div class="reservation-bg-overlay"></div>
+      <div class="section-container">
+        <div class="reservation-box glass-card">
+          <div class="section-header">
+            <span class="section-subtitle">Secure Your Table</span>
+            <h2 class="section-title">Reserve Now</h2>
+            <div class="section-line"></div>
+          </div>
+          
+          <form class="reservation-form" id="booking-form">
+            <div class="form-row">
+              <div class="form-group-luxury">
+                <input type="text" id="name" required placeholder=" " class="luxury-input">
+                <label for="name" class="luxury-label">Full Name</label>
+              </div>
+              <div class="form-group-luxury">
+                <input type="tel" id="phone" required placeholder=" " class="luxury-input">
+                <label for="phone" class="luxury-label">Phone Number</label>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group-luxury select-luxury">
+                <select id="guests" class="luxury-input-select">
+                  <option value="1">1 Guest</option>
+                  <option value="2" selected>2 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="8">8 Guests (Private Salon)</option>
+                </select>
+                <label for="guests" class="luxury-label-always">Number of Guests</label>
+              </div>
+              <div class="form-group-luxury">
+                <input type="date" id="date" required placeholder=" " class="luxury-input">
+                <label for="date" class="luxury-label-always">Select Date</label>
+              </div>
+              <div class="form-group-luxury select-luxury">
+                <select id="time" class="luxury-input-select">
+                  <option value="18:00">06:00 PM</option>
+                  <option value="19:00">07:00 PM</option>
+                  <option value="20:00" selected>08:00 PM</option>
+                  <option value="21:00">09:00 PM</option>
+                  <option value="22:00">10:00 PM</option>
+                </select>
+                <label for="time" class="luxury-label-always">Select Time</label>
+              </div>
+            </div>
+            
+            <div class="form-group-luxury">
+              <textarea id="requests" placeholder=" " class="luxury-input" style="height: 90px; resize: none;"></textarea>
+              <label for="requests" class="luxury-label">Dietary Restrictions & Occasions</label>
+            </div>
+            
+            <button type="submit" class="btn btn-gold btn-submit">Request Reservation</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="luxury-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">GOIA</div>
+          <p>An extraordinary journey of fine dining, luxury hospitality, and culinary storytelling.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram" class="social-icon">IG</a>
+            <a href="#" aria-label="Facebook" class="social-icon">FB</a>
+            <a href="#" aria-label="Twitter" class="social-icon">TW</a>
+            <a href="#" aria-label="Yelp" class="social-icon">YP</a>
+          </div>
+        </div>
+        
+        <div class="footer-info">
+          <div class="footer-col">
+            <h4>Hours</h4>
+            <p>Wednesday - Sunday</p>
+            <p>05:30 PM - 11:30 PM</p>
+            <p>Monday - Tuesday (Closed)</p>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Location</h4>
+            <p>42 Luxury Plaza Way,</p>
+            <p>Mayfair, London, UK</p>
+            <p><a href="mailto:concierge@goiadining.com">concierge@goiadining.com</a></p>
+          </div>
+          
+          <div class="footer-col">
+            <h4>Inquiries</h4>
+            <p>T: +44 20 7946 0958</p>
+            <p>Reservations open 30 days in advance at 9:00 AM daily.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 GOIA Restaurant Group. All Rights Reserved. Crafted for Taste and Elegance.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Lightbox for Gallery -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <span class="lightbox-prev">&#10094;</span>
+    <img class="lightbox-content" id="lightbox-img" src="" alt="Enlarged gallery view">
+    <span class="lightbox-next">&#10095;</span>
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <!-- Luxury Success Modal Overlay -->
+  <div class="luxury-modal" id="success-modal">
+    <div class="luxury-modal-content glass-card">
+      <div class="success-icon">&#10003;</div>
+      <h3>Table Confirmed</h3>
+      <p class="modal-name-text">Hello, Guest</p>
+      <p class="modal-sub-text">Your reservation table is successfully held. Our head concierge will contact you within 2 hours to curate your experience.</p>
+      <button class="btn btn-gold modal-close">Return to Salon</button>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Pulsing Badge -->
+  <a href="https://wa.me/442079460958" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <span class="whatsapp-pulse-ring ring-1"></span>
+    <span class="whatsapp-pulse-ring ring-2"></span>
+    <svg viewBox="0 0 24 24" class="whatsapp-icon">
+      <path fill="currentColor" d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.982L2 22l5.202-1.364a9.92 9.92 0 0 0 4.81 1.233h.005c5.506 0 9.99-4.479 9.99-9.986.002-2.67-1.037-5.18-2.93-7.072A9.914 9.914 0 0 0 12.012 2zm5.795 14.22c-.253.714-1.468 1.397-2.024 1.482-.505.077-1.164.14-3.39-.777-2.85-1.173-4.68-4.075-4.823-4.266-.142-.19-1.144-1.52-1.144-2.9 0-1.382.723-2.062 1.002-2.344.278-.283.608-.354.81-.354.204 0 .406.002.583.01.184.007.432-.074.678.518.253.608.86 2.096.935 2.247.077.15.127.329.026.532-.1.203-.153.33-.305.507-.152.177-.32.393-.456.527-.152.152-.31.317-.133.62.177.302.787 1.298 1.688 2.102.86.766 1.583 1.002 1.888 1.153.305.153.482.127.66-.076.177-.203.76-.887.964-1.19.202-.303.405-.253.684-.152.278.1.1.76 1.774 1.597 1.013.507 1.685.836 1.863.937.177.1.304.152.38.278.077.126.077.728-.176 1.442z"/>
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+</body>
+</html>
