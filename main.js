@@ -34,7 +34,7 @@ const airpods = { frame: 0 };
 // Construct padding for frames
 function getFramePath(index) {
   const numStr = String(index).padStart(3, '0');
-  return `/all photos/ezgif-frame-${numStr}.jpg`;
+  return `all photos/ezgif-frame-${numStr}.jpg`;
 }
 
 // Preloader elements
